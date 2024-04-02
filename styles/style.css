@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ebe8eb;
+}
+.logo{
+    width: 50px;
+}
+.navbar{
+   /* background: linear-gradient(to right, rgba(31, 68, 110, 0.7), rgba(180, 180, 180, 0.7));*/
+   /* background: linear-gradient(to right, #1f446e, #b4b4b4);*/
+    height: 105px;
+    /*margin-bottom: 5px;*/
+    /*border-bottom: 2px solid #000;*/
+    background: white;
+    
+}
+.align {
+    display: flex;
+    flex-direction: row;
+    /*align-items: center; /* Puoi rimuovere questa linea se non vuoi centrare verticalmente */
+    
+}
+.container-image {
+    width: 100%;
+    /*overflow: hidden; /* Per gestire il float dell'immagine */
+   /* margin-right: 5px;*/
+}
+
+.custom-image {
+    /*height: 600px;*/
+    width: 100%;
+    display: block;
+   
+}
+.card-body{
+    width: 50%;
+    background: linear-gradient(to top, #1f446e, #b4b4b4);
+    opacity: 0; /* Impostiamo l'opacità a 0 per iniziare nascosto */
+    transform: translateX(100%); /* Spostiamo il card-body fuori dalla vista a destra */
+    transition: opacity 0.7s, transform 0.7s; /* Applichiamo una transizione all'opacità e alla trasformazione */
+    line-height: 2;
+
+}
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.card-title{
+    text-align: center;
+    margin-top: 10px;
+}
+.card-body a{
+    color: #000000;
+}.cerchi-concentrici {
+    position: relative;
+    width: 300px; /* Dimensioni del contenitore dei cerchi */
+    height: 300px;
+}
+
+.cerchio {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 50%; /* Questo renderà il div un cerchio */
+    position: absolute;
+}
+
+.cerchio:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.cerchio:nth-child(2) {
+    width: 200px; /* Dimensione del secondo cerchio */
+    height: 200px;
+    top: 50px; /* Posizione verticale del secondo cerchio */
+    left: 50px; /* Posizione orizzontale del secondo cerchio */
+}
+
+.cerchio:nth-child(3) {
+    width: 100px; /* Dimensione del terzo cerchio */
+    height: 100px;
+    top: 100px; /* Posizione verticale del terzo cerchio */
+    left: 100px; /* Posizione orizzontale del terzo cerchio */
+}
+
+
