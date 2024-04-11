@@ -1,19 +1,24 @@
-body {
+body, html{
     margin: 0;
     padding: 0;
-    background-color: #ebe8eb;
-}
-.logo{
-    width: 50px;
+    height: 100%;
+    background: linear-gradient(to top, #1f446e, #b4b4b4);
 }
 .navbar{
-   /* background: linear-gradient(to right, rgba(31, 68, 110, 0.7), rgba(180, 180, 180, 0.7));*/
-   /* background: linear-gradient(to right, #1f446e, #b4b4b4);*/
-    height: 105px;
+    /* background: linear-gradient(to right, rgba(31, 68, 110, 0.7), rgba(180, 180, 180, 0.7));*/
+    /* background: linear-gradient(to right, #1f446e, #b4b4b4);*/
+    /*height: 105px;*/
     /*margin-bottom: 5px;*/
     /*border-bottom: 2px solid #000;*/
     background: white;
     
+}
+.navbar-brand{
+    display: inline-block; /* Imposta il display su inline-block */
+    width: 10%;
+}
+.logo{
+    width: 70%;
 }
 .align {
     display: flex;
